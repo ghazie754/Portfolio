@@ -15,10 +15,7 @@ export default class MyDocument extends Document {
 
   render() {
     return (
-      <Html lang="en">
-        <Head />
-        <body>
-          <Main />
+      <Html lang="en">vzxcvkmzvm;lmfemmve;ed
           <NextScript />
         </body>
       </Html>
