@@ -15,7 +15,10 @@ export default class MyDocument extends Document {
 
   render() {
     return (
-      <Html lang="en">vzxcvkmzvm;lmfemmve;ed
+      <Html lang="en">
+        <Head />
+        <body>
+          <Main />
           <NextScript />
         </body>
       </Html>
@@ -34,13 +37,13 @@ MyDocument.getInitialProps = async (ctx) => {
       enhanceApp: (App) => (props) => sheets.collect(<App {...props} />),
     });
 
-  const initialProps = await Document.getInitialProps(ctx);
+  const initialProps = Document.getInitialProps(ctx);
 
   return {
     ...initialProps,
     // Styles fragment is rendered after the app and page rendering finish.
     styles: [
-      ...React.Children.toArray(initialProps.styles),
+      ...React.Children.toArray((await initialProps).styles),
       sheets.getStyleElement(),
     ],
   };
