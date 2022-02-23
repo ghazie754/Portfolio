@@ -38,7 +38,7 @@
     "lib/initApollo.ts ",
     "lib/withApollo.tsx ",
     "next.config.js",
-    "next.config.mjs"
+    "next.config.js"
   ],
   "exclude": ["node_modules"]
 }
