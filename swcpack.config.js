@@ -1,4 +1,6 @@
-{
+import config from "@swc/core/spack"
+
+module.exports = config({
   "jsc": {
     "parser": {
       "syntax": "ecmascript",
@@ -20,4 +22,4 @@
     // Requires v1.2.50 or upper and requires target to be es2016 or upper.
     "keepClassNames": false
   }
-}
+});
