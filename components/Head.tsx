@@ -1,3 +1,4 @@
+/* eslint-disable require-jsdoc */
 import Head from "next/head";
 function navhead() {
   return (

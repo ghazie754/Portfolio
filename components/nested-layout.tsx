@@ -1,3 +1,4 @@
+/* eslint-disable require-jsdoc */
 import Navbar from "./navbar";
 import Footer from "./newsletter";
 

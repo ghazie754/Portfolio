@@ -1,3 +1,4 @@
+/* eslint-disable require-jsdoc */
 import Link from "next/link";
 import Hero from "./hero";
 

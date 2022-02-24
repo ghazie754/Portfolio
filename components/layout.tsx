@@ -1,3 +1,4 @@
+/* eslint-disable require-jsdoc */
 import Head from "./Head";
 import Footer from "./footer";
 import NestedLayout from "../components/nested-layout";
