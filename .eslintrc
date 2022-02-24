@@ -1,15 +1,14 @@
 {
   "root": true,
   "extends": [
-    "next/core-web-vitals",
-    "plugin:react/jsx-runtime",
+    "next",
     "google",
-    "prettier"
+    "prettier",
+    "next/core-web-vitals",
+    "plugin:react/jsx-runtime"
   ],
   "env": {
-    "browser": true,
-    "es2021": true,
-    "es6": true
+    "es2020": true
   },
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
@@ -21,8 +20,8 @@
   },
   "plugins": ["react"],
   "rules": {
-    "react/react-in-jsx-scope": 0,
-    "react/jsx-uses-react": 0,
+    // "react/react-in-jsx-scope": 0,
+    // "react/jsx-uses-react": 0,
     "semi": ["error", "always"],
     "quotes": ["error", "double"]
   }
