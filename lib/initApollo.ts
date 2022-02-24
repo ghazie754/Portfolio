@@ -1,4 +1,5 @@
 /* eslint-disable import/no-anonymous-default-export */
+/* eslint-disable require-jsdoc */
 import {
   ApolloClient,
   InMemoryCache,
