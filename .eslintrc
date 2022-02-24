@@ -19,8 +19,12 @@
       "jsx": true
     }
   },
-
-  "plugins": ["react", "@typescript-eslint/parser"],
+  "plugins": [
+    "react",
+    "react/react-in-jsx-scope",
+    "react/jsx-uses-react",
+    "NEXTJS Snippets tsx and jsx"
+  ],
   "rules": {
     "react/react-in-jsx-scope": 0,
     "react/jsx-uses-react": 0,

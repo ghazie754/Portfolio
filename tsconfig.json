@@ -34,11 +34,8 @@
     "graphql.d.ts",
     "**/*.ts",
     "**/*.tsx",
-    "next.config.ja",
-    "lib/initApollo.ts ",
-    "lib/withApollo.tsx ",
     "next.config.js",
     "next.config.js"
   ],
-  "exclude": ["node_modules"]
+  "exclude": ["node_modules", "lib/initApollo.ts", "lib/withApollo.tsx"]
 }
