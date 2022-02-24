@@ -1,12 +1,6 @@
 {
   "root": true,
-  "extends": [
-    "next",
-    "google",
-    "prettier",
-    "next/core-web-vitals",
-    "plugin:react/jsx-runtime"
-  ],
+  "extends": ["next", "google", "prettier", "next/core-web-vitals"],
   "env": {
     "es2020": true
   },
@@ -20,8 +14,10 @@
   },
   "plugins": ["react"],
   "rules": {
-    // "react/react-in-jsx-scope": 0,
-    // "react/jsx-uses-react": 0,
+    "react/react-in-jsx-scope": 0,
+    "react/jsx-uses-react": 0,
+    "react/no-unescaped-entities": "off",
+    "@next/next/no-page-custom-font": "off",
     "semi": ["error", "always"],
     "quotes": ["error", "double"]
   }
