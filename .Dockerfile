@@ -1,17 +1,21 @@
-FROM node:14-alpine
+FROM node:alpine
 
-WORKDIR /app
+RUN mkdir -p /usr/src/app
+ENV PORT 3000
 
-COPY package.json ./
+WORKDIR /usr/src/app
 
-COPY yarn.lock ./
+COPY package.json /usr/src/app
+COPY yarn.lock /usr/src/app
 
-RUN yarn install --frozen-lockfile && yarn start
+# Production use node instead of root
+# USER node
 
-RUN echo hello 
+RUN yarn install --production
 
-COPY . .
+COPY . /usr/src/app
+
+RUN yarn build
 
 EXPOSE 3000
-
-CMD ["npm", "start"]
+CMD [ "yarn", "start" ]
