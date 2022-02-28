@@ -1,4 +1,3 @@
-/* eslint-disable require-jsdoc */
 function footer() {
   const Today: Date = new Date();
   return (

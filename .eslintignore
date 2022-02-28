@@ -3,6 +3,11 @@
 /.pnp
 .pnp.js
 /vscode
+/pages
+/components
+/lib
+*.tsx
+
 
 # testing
 /coverage
@@ -42,4 +47,3 @@ yarn.lock
 package-lock.json
 swcpack.config.js
 public
-index.tsx

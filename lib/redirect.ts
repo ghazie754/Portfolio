@@ -1,4 +1,3 @@
-/* eslint-disable import/no-anonymous-default-export */
 import Router from "next/router";
 
 export default (context: any, target: string) => {

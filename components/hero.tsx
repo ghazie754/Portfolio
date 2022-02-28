@@ -1,4 +1,3 @@
-/* eslint-disable require-jsdoc */
 import React, { Component, useRef, useState } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 
