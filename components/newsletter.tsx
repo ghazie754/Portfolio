@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { useState } from "react";
 
 function News() {
@@ -7,7 +8,7 @@ function News() {
   return (
     <>
       <div className="page php">
-        <form className="page1">
+        <form className="page">
           <div className="container">
             <h2>Subscribe to our Newsletter</h2>
             <p>Lorem ipsum..</p>
@@ -36,36 +37,14 @@ function News() {
             <input type="submit" value="Subscribe" />
           </div>
         </form>
-        <form className="page php2">
-          <ul>
-            <li>
-              <ul>
-                <li>1</li>
-                <li>2</li>
-                <li>3</li>
-                <li>4</li>
-                <li>5</li>
-              </ul>
-            </li>
-            <li>
-              <ul>
-                <li>1</li>
-                <li>2</li>
-                <li>3</li>
-                <li>4</li>
-                <li>5</li>
-              </ul>
-            </li>
-            <li>
-              <ul>
-                <li>1</li>
-                <li>2</li>
-                <li>3</li>
-                <li>4</li>
-                <li>5</li>
-              </ul>
-            </li>
-          </ul>
+        <form className="page">
+          <Link href="/">Home</Link>
+          <Link href="/gallery">Gallery</Link>
+          <Link href="/protfolio">Protfolio</Link>
+          <Link href="/unDeveloped">Under Development</Link>
+          <Link href="/projects">Projects</Link>
+          <Link href="/about%20Me">About Me</Link>
+          <Link href="/random">Random</Link>
         </form>
       </div>
     </>

@@ -1,4 +1,4 @@
-import config from "@swc/core/spack";
+/** @type{import{config}from "@swc/core/spack"}*/
 
 module.exports = config({
   "jsc": {

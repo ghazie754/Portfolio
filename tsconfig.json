@@ -18,15 +18,17 @@
     "allowSyntheticDefaultImports": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "removeComments": false,
     "strictNullChecks": true,
     "incremental": true,
     "noImplicitAny": true,
     "allowUnreachableCode": false,
     "allowUnusedLabels": false,
-    "declaration": true,
     "noFallthroughCasesInSwitch": true,
     "noImplicitReturns": true,
+    "declaration": true,
+    "removeComments": true,
+    "noImplicitThis": false,
+    "baseUrl": "./",
     "pretty": true
   },
   "include": [
@@ -34,8 +36,9 @@
     "graphql.d.ts",
     "**/*.ts",
     "**/*.tsx",
-    "next.config.mjs",
-    "next.config.mjs"
+    "next.config.js",
+    "next.config.js",
+    "swcpack.config.js"
   ],
   "exclude": ["node_modules", "lib/initApollo.ts", "lib/withApollo.tsx"]
 }

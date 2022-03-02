@@ -17,19 +17,19 @@ export default (App: any) => {
   return class WithData extends React.Component {
     static displayName = `WithData(${App.displayName})`;
     static propTypes = {
-      apolloState: PropTypes.object.isRequired,
+      apolloState: PropTypes.object.isRequired
     };
 
     static async getInitialProps(ctx: any) {
       const {
         Component,
         router,
-        ctx: { req, res },
+        ctx: { req, res }
       } = ctx;
       const apollo = initApollo(
         {},
         {
-          getToken: () => parseCookies(req).qid,
+          getToken: () => parseCookies(req).qid
         }
       );
 
@@ -76,7 +76,7 @@ export default (App: any) => {
 
       return {
         ...appProps,
-        apolloState,
+        apolloState
       };
     }
 
@@ -89,7 +89,7 @@ export default (App: any) => {
       this.apolloClient = initApollo(props.apolloState, {
         getToken: () => {
           return parseCookies().token;
-        },
+        }
       });
     }
 

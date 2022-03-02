@@ -1,10 +1,10 @@
-import Navbar from "./navbar";
+import Hero from "./hero";
 import Footer from "./newsletter";
 
 export default function Layout({ children }: { children?: any }): JSX.Element {
   return (
     <>
-      <Navbar />
+      <Hero />
       {children}
       <Footer />
     </>
