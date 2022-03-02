@@ -13,6 +13,11 @@
     "silent test-all": "npm --silent run test-all",
     "test-all": "npm run check-lint && npm run check-types && npm run check-format && npm run build"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit"
+    }
+  },
   "dependencies": {
     "@emotion/react": "^11.8.1",
     "@emotion/styled": "^11.8.1",

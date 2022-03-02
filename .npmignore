@@ -4,3 +4,16 @@ definition-manifest.json
 .devcontainer/library-scripts/README.md
 .vscode
 .npmignore
+.*.swp
+._*
+.DS_Store
+.git
+.hg
+.npmrc
+.lock-wscript
+.svn
+.wafpickle-*
+config.gypi
+CVS
+npm-debug.log
+package.json
