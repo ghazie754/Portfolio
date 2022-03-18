@@ -1,6 +1,11 @@
 {
   "name": "my-app",
   "private": true,
+  "husky": {
+    "hooks": {
+      "pre-commit": "echo \"[Husky] pre-commit\""
+    }
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -13,23 +18,16 @@
     "silent test-all": "npm --silent run test-all",
     "test-all": "npm run check-lint && npm run check-types && npm run check-format && npm run build"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit"
-    }
-  },
   "dependencies": {
     "@emotion/react": "^11.8.1",
     "@emotion/styled": "^11.8.1",
-    "@material-ui/core": "^4.12.3",
     "@react-icons/all-files": "^4.1.0",
+    "@react-three/cannon": "^4.9.0",
     "@react-three/drei": "^8.11.0",
     "@react-three/fiber": "^7.0.26",
     "@types/three": "^0.137.0",
     "@types/webpack": "^5.28.0",
     "@use-gesture/react": "^10.2.6",
-    "apollo-boost": "^0.4.9",
-    "apollo-link-context": "^1.0.20",
     "eslint-webpack-plugin": "^3.1.1",
     "isomorphic-unfetch": "^3.1.0",
     "jshint": "^2.13.4",
@@ -40,11 +38,9 @@
     "react-spring": "^9.4.3",
     "scss": "^0.2.4",
     "socket.io": "^4.4.1",
-    "theme-ui": "^0.13.1",
-    "three": "^0.138.0"
+    "three": "^0.138.2"
   },
   "devDependencies": {
-    "@babel/preset-env": "^7.16.11",
     "@netlify/plugin-nextjs": "^4.2.7",
     "@swc/cli": "^0.1.55",
     "@swc/core": "^1.2.144",
