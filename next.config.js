@@ -1,7 +1,11 @@
 /** @type {import('next').NextConfig} */
+import { join } from "./styles/globals.scss";
 
 module.exports = {
-  reactStrictMode: true // was there by default
+  reactStrictMode: true,
+  sassOptions: {
+    includePaths: [join(__dirname, "styles")]
+  } // was there by default
   // future: {
   //   webpack5: true
   // },
