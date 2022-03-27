@@ -1,10 +1,7 @@
 /** @type {import('next').NextConfig} */
-const Path = require("path");
+
 module.exports = {
-  reactStrictMode: true,
-  sassOptions: {
-    includePaths: [Path.join(__dirname, "styles")]
-  }
+  reactStrictMode: true
   // future: {
   //   webpack5: true
   // },

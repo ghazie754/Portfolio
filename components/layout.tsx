@@ -5,11 +5,11 @@ import NestedLayout from "../components/nested-layout";
 
 export default function Layout({ children }: { children?: any }): JSX.Element {
   return (
-    <>
+    <div>
       <Head />
       <Navbar />
       <NestedLayout>{children}</NestedLayout>
       <Footer />
-    </>
+    </div>
   );
 }

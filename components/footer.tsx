@@ -4,12 +4,9 @@ function footer() {
   const Today: Date = new Date();
   return (
     <>
-      <div className="footer">
-        <p>COPYRIGHT &copy; {Today.getUTCFullYear()}</p>
-        <button className="bg-sky-600 hover:bg-sky-700 ...">
-          Save changes
-        </button>
-      </div>
+      <footer className=" footer">
+        <p>COPYRIGHT &copy; {Today.getUTCFullYear()}</p>{" "}
+      </footer>
 
       <Script
         strategy="lazyOnload"
