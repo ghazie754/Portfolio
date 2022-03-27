@@ -1,0 +1,94 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+$Color: rgb(228, 120, 210);
+$Width: 16;
+$Height: 9;
+$Font-size: 13;
+$Big-font-size: 46;
+$Animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: fira code, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+#__next {
+  width: 100%;
+  height: 67.5rem;
+}
+
+a {
+  color: $Color;
+  text-decoration: none;
+}
+
+img,
+input[type="image"],
+video,
+embed,
+iframe,
+marquee,
+object,
+table {
+  aspect-ratio: attr(width) / attr(height);
+}
+/* #loading {
+  visibility: hidden;
+} */
+nav.nav {
+  width: 100%;
+  height: 2em;
+  position: sticky;
+  background-color: rgb(175, 164, 6);
+}
+
+nav.nav div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  display: inline;
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+}
+nav.nav div a {
+  color: crimson;
+  padding: auto;
+  margin: 10px;
+  font: 0.75em sans-serif;
+}
+.canvas {
+  position: absolute;
+  width: 100%;
+  height: 45rem;
+  z-index: -1;
+}
+
+.page.php {
+  width: 100%;
+  height: 7rem;
+  position: absolute;
+  bottom: -40%;
+  display: flex;
+  flex-direction: row;
+}
+
+.page.php .page {
+  display: inline-flexbox;
+  color: rgb(155, 138, 42);
+}
+
+.footer {
+  position: absolute;
+  background-color: rgb(31, 10, 105);
+  color: rgb(231, 25, 25);
+  width: 100%;
+  height: 2.5em;
+  justify-content: center;
+  text-align: center;
+  bottom: -50%;
+}
