@@ -1,11 +1,6 @@
 {
   "name": "my-app",
   "private": true,
-  "husky": {
-    "hooks": {
-      "pre-commit": "echo \"[Husky] pre-commit\""
-    }
-  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -17,6 +12,14 @@
     "format": "prettier --write .",
     "silent test-all": "npm --silent run test-all",
     "test-all": "npm run check-lint && npm run check-types && npm run check-format && npm run build"
+  },
+  "husky": {
+    "hooks": {
+      "applypatch-msg": "echo \"[Husky] applypatch-msg\"",
+      "pre-applypatch": "echo \"[Husky] pre-applypatch\"",
+      "post-applypatch": "echo \"[Husky] post-applypatch\"",
+      "pre-commit": "echo \"[Husky] pre-commit\""
+    }
   },
   "dependencies": {
     "@emotion/react": "^11.8.2",
