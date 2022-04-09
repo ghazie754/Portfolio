@@ -12,5 +12,5 @@
       "jsx": true
     }
   },
-  "plugins": ["eslint-config-next"]
+  "plugins": []
 }
