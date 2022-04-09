@@ -5,8 +5,7 @@
 /vscode
 /components
 /lib
-*.tsx
-
+Derivative.ts
 
 # testing
 /coverage

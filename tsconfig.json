@@ -40,5 +40,10 @@
     "next.config.js",
     "swcpack.config.js"
   ],
-  "exclude": ["node_modules", "lib/initApollo.ts", "lib/withApollo.tsx"]
+  "exclude": [
+    "node_modules",
+    "lib/initApollo.ts",
+    "lib/withApollo.tsx",
+    "./components/Derivative.ts"
+  ]
 }
