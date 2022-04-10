@@ -22,6 +22,17 @@
       "pre-commit": "echo \"[Husky] pre-commit\""
     }
   },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": "eslint --fix",
+    "*.{js,jsx,ts,tsx,md,html,css}": "prettier --write .",
+    "*.css": "stylelint",
+    "*.scss": [
+      "stylelint --syntax=scss",
+      "postcss --config path/to/your/config --replace",
+      "stylelint"
+    ],
+    "*.{png,jpeg,jpg,gif,svg}": "imagemin-lint-staged"
+  },
   "dependencies": {
     "@emotion/react": "^11.8.2",
     "@emotion/styled": "^11.8.1",
@@ -61,6 +72,7 @@
     "eslint-plugin-react": "^7.29.4",
     "husky": "^7.0.0",
     "jest": "^27.5.1",
+    "lint-staged": ">=10",
     "netlify-cli": "^9.13.3",
     "postcss": "^8.4.12",
     "prettier": "^2.6.0",
