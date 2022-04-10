@@ -1,6 +1,12 @@
 {
   "root": true,
-  "extends": ["next", "google", "prettier", "plugin:@next/next/recommended"],
+  "extends": [
+    "next",
+    "google",
+    "prettier",
+    "plugin:@next/next/recommended",
+    "next/core-web-vitals"
+  ],
   "env": {
     "es2020": true
   },
@@ -12,5 +18,5 @@
       "jsx": true
     }
   },
-  "plugins": []
+  "plugins": ["@next/next"]
 }
