@@ -3,14 +3,7 @@
     "browser": true,
     "es2021": true
   },
-  "extends": [
-    "eslint:recommended",
-    "plugin:react/recommended",
-    "plugin:@typescript-eslint/recommended",
-    "next",
-    "google",
-    "prettier"
-  ],
+  "extends": ["next", "plugin:react/recommended", "google", "prettier"],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "ecmaFeatures": {
@@ -20,5 +13,8 @@
     "sourceType": "module"
   },
   "plugins": ["react", "@typescript-eslint"],
-  "rules": { "react/react-in-jsx-scope": "off", "prettier/prettier": "off" }
+  "rules": {
+    "react/react-in-jsx-scope": "off",
+    "prettier/prettier": "off"
+  }
 }
