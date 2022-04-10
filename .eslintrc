@@ -18,5 +18,5 @@
       "jsx": true
     }
   },
-  "plugins": ["@next/next"]
+  "plugins": []
 }
