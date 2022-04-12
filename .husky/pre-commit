@@ -46,3 +46,4 @@ npx lint-staged
 git add .
 
 git push
+npx lint-staged

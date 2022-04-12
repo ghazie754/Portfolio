@@ -13,14 +13,6 @@
     "silent test-all": "npm --silent run test-all",
     "test-all": "npm run check-lint && npm run check-types && npm run check-format && npm run build"
   },
-  "husky": {
-    "hooks": {
-      "applypatch-msg": "echo \"[Husky] applypatch-msg\"",
-      "pre-applypatch": "echo \"[Husky] pre-applypatch\"",
-      "post-applypatch": "echo \"[Husky] post-applypatch\"",
-      "pre-commit": "echo \"[Husky] pre-commit\""
-    }
-  },
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": "eslint --fix",
     "*.{js,jsx,ts,tsx,md,html,css}": "prettier --write .",
@@ -30,7 +22,9 @@
       "postcss --config path/to/your/config --replace",
       "stylelint"
     ],
-    "*.{png,jpeg,jpg,gif,svg}": "imagemin-lint-staged"
+    "*.{png,jpeg,jpg,gif,svg}": "imagemin-lint-staged",
+    "*.js": "eslint --cache --fix",
+    "*.{js,css,md}": "prettier --write"
   },
   "dependencies": {
     "@emotion/react": "^11.8.2",
