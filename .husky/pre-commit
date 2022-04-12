@@ -1,6 +1,8 @@
 #!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
 
+git add .
+
 echo '🏗️👷 Styling, testing and building your project before committing'
 
 # Check Prettier standards
@@ -43,7 +45,4 @@ echo '✅✅✅✅ You win this time... I am committing this now. ✅✅✅✅'
 
 npx lint-staged
 
-git add .
-
 git push
-npx lint-staged
