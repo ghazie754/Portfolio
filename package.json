@@ -9,13 +9,14 @@
     "check-types": "tsc --pretty --noEmit",
     "check-format": "prettier --check .",
     "check-lint": "next lint",
+    "lint-staged": "npm",
     "format": "prettier --write .",
     "silent test-all": "npm --silent run test-all",
     "test-all": "npm run check-lint && npm run check-types && npm run check-format && npm run build"
   },
   "lint-staged": {
-    "*.{js,jsx,ts,tsx}": "eslint --fix",
-    "*.{js,jsx,ts,tsx,md,html,css}": "prettier --write .",
+    "*.{js,jsx,ts,tsx}": "npx eslint --fix",
+    "*.{js,jsx,ts,tsx,md,html,css}": "npx prettier --write .",
     "*.css": "stylelint",
     "*.scss": [
       "stylelint --syntax=scss",
