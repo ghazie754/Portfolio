@@ -1,5 +1,4 @@
-/* eslint-disable require-jsdoc */
-import "../tailwindcss/tailwind.css";
+import "../styles/globes.scss";
 import type { AppProps } from "next/app";
 import Layout from "../components/layout";
 

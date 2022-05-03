@@ -3,7 +3,6 @@
 /.pnp
 .pnp.js
 /vscode
-/components
 /lib
 Derivative.ts
 
@@ -31,9 +30,6 @@ yarn-error.log*
 .env.development.local
 .env.test.local
 .env.production.local
-
-# vercel
-.vercel
 
 # typescript
 *.tsbuildinfo

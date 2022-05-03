@@ -34,16 +34,9 @@
   "include": [
     "next-env.d.ts",
     "graphql.d.ts",
-    "**/*.ts",
-    "**/*.tsx",
     "next.config.js",
     "next.config.js",
     "swcpack.config.js"
   ],
-  "exclude": [
-    "node_modules",
-    "lib/initApollo.ts",
-    "lib/withApollo.tsx",
-    "./components/Derivative.ts"
-  ]
+  "exclude": ["node_modules", "next-env.d.ts"]
 }

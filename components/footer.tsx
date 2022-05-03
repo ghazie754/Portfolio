@@ -4,7 +4,7 @@ function footer() {
   const Today: Date = new Date();
   return (
     <>
-      <footer className=" footer">
+      <footer className="footer">
         <p>COPYRIGHT &copy; {Today.getUTCFullYear()}</p>{" "}
       </footer>
 

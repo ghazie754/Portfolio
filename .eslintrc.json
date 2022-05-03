@@ -4,6 +4,11 @@
     "es2021": true
   },
   "extends": ["next", "plugin:react/recommended", "google", "prettier"],
+  "settings": {
+    "next": {
+      "rootDir": "packages/my-app/"
+    }
+  },
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "ecmaFeatures": {
