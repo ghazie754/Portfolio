@@ -4,10 +4,10 @@ function footer() {
   const Today: Date = new Date();
   return (
     <>
-      <footer className="footer">
-        <p>COPYRIGHT &copy; {Today.getUTCFullYear()}</p>{" "}
-      </footer>
-
+      <footer className="footer">dfngjfgkj</footer>
+      <p className="copyright">
+        COPYRIGHT &copy; {Today.getUTCFullYear()}
+      </p>{" "}
       <Script
         strategy="lazyOnload"
         src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
