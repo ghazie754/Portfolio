@@ -3,8 +3,8 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "silent-build": "npm --silent run build",
-    "build": "next build && next export",
+    "build": "npm --silent run silent-build",
+    "silent-build": "next build && next export",
     "start": "next start",
     "prepare": "husky install",
     "check-types": "tsc --pretty --noEmit",

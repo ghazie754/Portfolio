@@ -20,6 +20,6 @@ COPY --from=builder /my-project/node_modules ./node_modules
 COPY --from=builder /my-project/package.json ./package.json
 
 EXPOSE 3000
-CMD ["yarn", "build"]
+CMD ["yarn", "start"]
 
 # docker run -p 3000:3000 ghcr.io/<YOUR_GITHUB_USERNAME>/my-project

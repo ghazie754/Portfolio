@@ -1,5 +1,5 @@
 import React, { useEffect, useState, FC } from "react";
-// import { createApi } from "unsplash-js";
+import { createApi } from "unsplash-js";
 // import Image from "next/image";
 // import Link from "next/link";
 
@@ -18,11 +18,11 @@ import React, { useEffect, useState, FC } from "react";
 //   };
 // };
 //
-// const api = createApi({
-//   // Don't forget to set your access token here!
-//   // See https://unsplash.com/developers
-//   accessKey: "0DstSeC4Ux8YRdfYMkZ3tB6XGhnnbFIeQlk7RS2e400"
-// });
+const api = createApi({
+  // Don't forget to set your access token here!
+  // See https://unsplash.com/developers
+  accessKey: "0DstSeC4Ux8YRdfYMkZ3tB6XGhnnbFIeQlk7RS2e400"
+});
 
 // const PhotoComp: React.FC<{ photo: Photo }> = ({ photo }) => {
 //   const { user, urls} = photo;
