@@ -1,6 +1,6 @@
 import React, { Component, useRef, useState } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
-import { Sky, Html } from "@react-three/drei";
+import { Html } from "@react-three/drei";
 
 function Shape(props: any) {
   // This reference gives us direct access to the THREE.Mesh object
@@ -26,13 +26,6 @@ function Shape(props: any) {
       onPointerOver={(_event) => sethover(true)}
       onPointerOut={(_event) => sethover(false)}
     >
-      <Sky
-        distance={450000}
-        sunPosition={[0, 1, 0]}
-        inclination={0}
-        azimuth={0.25}
-        {...props}
-      />
       <icosahedronGeometry />
       <meshStandardMaterial
         color={
