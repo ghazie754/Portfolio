@@ -10,8 +10,8 @@
     "check-types": "tsc --pretty --noEmit",
     "check-format": "prettier --check .",
     "check-lint": "next lint",
-    "staged": "npx run lint-staged",
-    "syntax": "px eslint --fix",
+    "staged": " npx run lint-staged",
+    "syntax": "npx eslint --fix",
     "format": "prettier --write .",
     "silent test-all": "npm --silent run test-all",
     "test-all": "npm run check-lint && npm run check-types && npm run check-format && npm run build",
@@ -32,7 +32,6 @@
     "*.{js,css,md}": "prettier --write"
   },
   "dependencies": {
-    "@next/swc-darwin-arm64": "^11.1.2",
     "@react-icons/all-files": "^4.1.0",
     "@react-three/cannon": "^6.3.0",
     "@react-three/drei": "^9.6.2",
