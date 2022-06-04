@@ -1,10 +1,9 @@
 import Script from "next/script";
-
 function footer() {
   const Today: Date = new Date();
   return (
     <>
-      <footer className="footer">dfngjfgkj</footer>
+      <footer className="footer"></footer>
       <p className="copyright">
         COPYRIGHT &copy; {Today.getUTCFullYear()}
       </p>{" "}

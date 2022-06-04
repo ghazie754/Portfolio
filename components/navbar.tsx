@@ -8,7 +8,9 @@ function navbar() {
         width={40}
         height={84}
         objectFit="cover"
-        src={"../public/favicon.ico"}
+        src={
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/How_to_use_icon.svg/2214px-How_to_use_icon.svg.png"
+        }
         alt=""
       /> */}
       <nav className="nav">
@@ -20,13 +22,17 @@ function navbar() {
             <Link href="/gallery">Gallery</Link>
           </li>
           <li>
-            <Link href="/protfolio">Protfolio</Link>
+            <Link href="/https://www.linkedin.com/in/ghazi-ern-52a32b21a/">
+              Protfolio
+            </Link>
           </li>
           <li>
             <Link href="/unDeveloped">Under Development</Link>
           </li>
           <li>
-            <Link href="/projects">Projects</Link>
+            <Link href="https://github.com/ghazie754?tab=repositories">
+              Projects
+            </Link>
           </li>
           <li>
             <Link href="/random">Random</Link>
