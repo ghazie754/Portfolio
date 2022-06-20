@@ -22,7 +22,7 @@ function navbar() {
             <Link href="/gallery">Gallery</Link>
           </li>
           <li>
-            <Link href="/https://www.linkedin.com/in/ghazi-ern-52a32b21a/">
+            <Link href="https://www.linkedin.com/in/ghazi-ern-52a32b21a/">
               Protfolio
             </Link>
           </li>
