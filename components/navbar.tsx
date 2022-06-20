@@ -1,6 +1,5 @@
 import Link from "next/link";
 // import Image from 'next/image';
-
 function navbar() {
   return (
     <header>
@@ -16,18 +15,12 @@ function navbar() {
       <nav className="nav">
         <ul>
           <li>
-            <Link href="/">Home</Link>
-          </li>
-          <li>
-            <Link href="/gallery">Gallery</Link>
-          </li>
-          <li>
-            <Link href="https://www.linkedin.com/in/ghazi-ern-52a32b21a/">
-              Protfolio
+            <Link href="/">
+              <a className="active">Home</a>
             </Link>
           </li>
           <li>
-            <Link href="/unDeveloped">Under Development</Link>
+            <Link href="/gallery">Gallery</Link>
           </li>
           <li>
             <Link href="https://github.com/ghazie754?tab=repositories">
