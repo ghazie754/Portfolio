@@ -1,6 +1,7 @@
 import Head from "next/head";
+import React from "react";
 
-function navhead() {
+const navhead = function () {
   return (
     <>
       <Head>
@@ -9,6 +10,6 @@ function navhead() {
       </Head>
     </>
   );
-}
+};
 
 export default navhead;
