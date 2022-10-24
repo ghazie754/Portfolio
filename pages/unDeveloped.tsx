@@ -1,4 +1,6 @@
-function unDeveloped() {
+import React from "react";
+
+function unDeveloped(): JSX.Element {
   return <>Enter</>;
 }
 

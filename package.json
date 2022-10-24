@@ -16,13 +16,9 @@
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": "eslint --fix",
     "*.{js,jsx,ts,tsx,md,html,css}": "prettier --write .",
-    "*.css": "npx stylelint",
     "*.scss": [
-      "npx stylelint --syntax=scss",
-      "npx postcss --config path/to/your/config --replace",
-      "npx stylelint"
+      "prettier --write"
     ],
-    "*.{png,jpeg,jpg,gif,svg}": "imagemin-lint-staged",
     "*.js": "eslint --cache --fix",
     "*.{js,css,md}": "prettier --write"
   },

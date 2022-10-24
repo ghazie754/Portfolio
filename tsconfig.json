@@ -31,12 +31,6 @@
     "baseUrl": "./",
     "pretty": true
   },
-  "include": [
-    "next-env.d.ts",
-    "graphql.d.ts",
-    "next.config.js",
-    "next.config.js",
-    "swcpack.config.js"
-  ],
+  "include": ["next-env.d.ts", "graphql.d.ts", "next.config.js"],
   "exclude": ["node_modules", "next-env.d.ts"]
 }

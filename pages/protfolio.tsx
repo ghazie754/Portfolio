@@ -1,4 +1,6 @@
-function protfolio() {
+import React from "react";
+
+function protfolio(): JSX.Element {
   return <>Enter</>;
 }
 
