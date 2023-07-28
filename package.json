@@ -6,7 +6,7 @@
     "build": "npm --silent run silent-build",
     "silent-build": "next build && next export",
     "start": "next start",
-    "prepare": "husky install",
+    "prepare": "npx husky install",
     "check-types": "tsc --pretty --noEmit",
     "check-format": "prettier --check .",
     "check-lint": "next lint",
